@@ -1,0 +1,156 @@
+/* ============================================================
+   SpowNext Design Tokens — Editorial Soft-Minimalism
+   Material Design 3 color scheme extended
+   ============================================================ */
+
+:root {
+  /* ── Surface / Background ── */
+  --color-background:                #f9f9f7;
+  --color-surface:                   #f9f9f7;
+  --color-surface-bright:            #f9f9f7;
+  --color-surface-dim:               #dadad8;
+  --color-surface-container-lowest:  #ffffff;
+  --color-surface-container-low:     #f4f4f2;
+  --color-surface-container:         #eeeeec;
+  --color-surface-container-high:    #e8e8e6;
+  --color-surface-container-highest: #e2e3e1;
+
+  /* ── Primary (violet-purple) ── */
+  --color-primary:           #5843d1;
+  --color-primary-container: #715eeb;
+  --color-on-primary:        #ffffff;
+  --color-primary-fixed:     #e4deff;
+  --color-primary-fixed-dim: #c7bfff;
+  --color-inverse-primary:   #c7bfff;
+
+  /* ── Secondary (warm coral) ── */
+  --color-secondary:           #8e4e14;
+  --color-secondary-container: #ffab69;
+  --color-on-secondary:        #ffffff;
+  --color-secondary-fixed:     #ffdcc4;
+  --color-secondary-fixed-dim: #ffb780;
+
+  /* ── Tertiary ── */
+  --color-tertiary:          #5b5b64;
+  --color-tertiary-container:#74747d;
+  --color-on-tertiary:       #ffffff;
+  --color-tertiary-fixed:    #e3e1ec;
+  --color-tertiary-fixed-dim:#c7c5d0;
+
+  /* ── Text ── */
+  --color-on-surface:         #1a1c1b;
+  --color-on-surface-variant: #474554;
+  --color-on-background:      #1a1c1b;
+  --color-text-primary:       #1a1a2e;
+  --color-text-secondary:     #5e5e7a;
+  --color-text-muted:         #9999b3;
+
+  /* ── Borders ── */
+  --color-outline:         #787586;
+  --color-outline-variant: #c9c4d7;
+
+  /* ── Error ── */
+  --color-error:           #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error:        #ffffff;
+
+  /* ── Typography ── */
+  --font-headline: "Plus Jakarta Sans";
+  --font-body:     "Inter";
+
+  /* ── Shadows (tinted with primary purple) ── */
+  --shadow-card:     0 2px 16px rgba(88, 67, 209, 0.07);
+  --shadow-elevated: 0 8px 40px rgba(88, 67, 209, 0.12);
+  --shadow-hover:    0 16px 48px rgba(88, 67, 209, 0.18);
+  --shadow-glass:    0 12px 32px rgba(88, 67, 209, 0.06);
+
+  /* ── Radius ── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 9999px;
+
+  /* ── Spacing (8px base) ── */
+  --space-1:  8px;
+  --space-2:  16px;
+  --space-3:  24px;
+  --space-4:  32px;
+  --space-6:  48px;
+  --space-8:  64px;
+  --space-10: 80px;
+  --space-12: 96px;
+  --space-16: 128px;
+
+  /* ── Gradients ── */
+  --gradient-primary: linear-gradient(135deg, #5843d1 0%, #715eeb 100%);
+  --gradient-hero:    linear-gradient(135deg, rgba(88,67,209,0.10) 0%, rgba(249,249,247,0) 100%);
+  --gradient-surface: linear-gradient(180deg, var(--color-background) 0%, var(--color-surface-container-low) 100%);
+}
+
+/* ============================================================
+   DARK MODE — applied when <html class="dark">
+   Deep dark canvas, same purple brand, elevated contrast
+   ============================================================ */
+.dark {
+  /* ── Surface / Background ── */
+  --color-background:                #0d0b1a;
+  --color-surface:                   #0d0b1a;
+  --color-surface-bright:            #1a1730;
+  --color-surface-dim:               #080612;
+  --color-surface-container-lowest:  #13112a;
+  --color-surface-container-low:     #19163a;   /* section alt */
+  --color-surface-container:         #1f1c40;
+  --color-surface-container-high:    #252248;
+  --color-surface-container-highest: #2c2850;
+
+  /* ── Primary — slightly brighter for dark bg legibility ── */
+  --color-primary:           #8b7ff8;
+  --color-primary-container: #6a5ce8;
+  --color-on-primary:        #ffffff;
+  --color-primary-fixed:     #2a2460;
+  --color-primary-fixed-dim: #3d3580;
+  --color-inverse-primary:   #5843d1;
+
+  /* ── Secondary (warm coral, darkened) ── */
+  --color-secondary:           #ffb780;
+  --color-secondary-container: #7a3d0a;
+  --color-on-secondary:        #3a1800;
+  --color-secondary-fixed:     #3d2010;
+  --color-secondary-fixed-dim: #5a3018;
+
+  /* ── Tertiary ── */
+  --color-tertiary:          #b8b5d0;
+  --color-tertiary-container:#3a3850;
+  --color-on-tertiary:       #1a1820;
+  --color-tertiary-fixed:    #2a2840;
+  --color-tertiary-fixed-dim:#353358;
+
+  /* ── Text ── */
+  --color-on-surface:         #e8e6f8;
+  --color-on-surface-variant: #a8a5c8;
+  --color-on-background:      #e8e6f8;
+  --color-text-primary:       #f0eeff;
+  --color-text-secondary:     #a0a0cc;
+  --color-text-muted:         #6060a0;
+
+  /* ── Borders ── */
+  --color-outline:         #5e5a80;
+  --color-outline-variant: #2e2b50;
+
+  /* ── Error ── */
+  --color-error:           #ffb3aa;
+  --color-error-container: #5c1010;
+  --color-on-error:        #3b0008;
+
+  /* ── Shadows — deeper, more visible on dark bg ── */
+  --shadow-card:     0 2px 20px rgba(0, 0, 0, 0.40);
+  --shadow-elevated: 0 8px 40px rgba(0, 0, 0, 0.55);
+  --shadow-hover:    0 16px 48px rgba(0, 0, 0, 0.65);
+  --shadow-glass:    0 12px 32px rgba(0, 0, 0, 0.35);
+
+  /* ── Gradients ── */
+  --gradient-primary: linear-gradient(135deg, #6a5ce8 0%, #8b7ff8 100%);
+  --gradient-hero:    linear-gradient(135deg, rgba(139,127,248,0.12) 0%, rgba(13,11,26,0) 100%);
+  --gradient-surface: linear-gradient(180deg, var(--color-background) 0%, var(--color-surface-container-low) 100%);
+}
