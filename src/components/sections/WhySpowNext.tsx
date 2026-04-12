@@ -3,6 +3,7 @@
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useTranslation }     from "@/lib/i18n";
 import type { Translations }  from "@/lib/i18n";
+import { SectionHeader }      from "@/components/ui/SectionHeader";
 
 // ── Pillar data ───────────────────────────────────────────────────────────────
 const PILLARS = [
@@ -77,29 +78,13 @@ export function WhySpowNext() {
       <div className="max-w-6xl mx-auto">
 
         {/* ── Header ── */}
-        <div className="text-center mb-16 space-y-4 reveal">
-          <span className="inline-flex items-center gap-2 text-primary font-bold tracking-widest text-xs uppercase font-label">
-            <span
-              className="material-symbols-outlined text-[14px]"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              lightbulb
-            </span>
-            {t("why.label")}
-          </span>
-          <h2
-            className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-on-surface"
-            style={{ hyphens: "auto" }}
-          >
-            {t("why.title")}
-          </h2>
-          <p
-            className="text-on-surface-variant max-w-xl mx-auto text-lg leading-relaxed"
-            style={{ hyphens: "auto" }}
-          >
-            {t("why.subtitle")}
-          </p>
-        </div>
+        <SectionHeader
+          icon="lightbulb"
+          label={t("why.label")}
+          title={t("why.title")}
+          subtitle={t("why.subtitle")}
+          className="mb-16"
+        />
 
         {/* ── Pillar Cards ── */}
         <div className="grid md:grid-cols-3 gap-6 items-stretch">

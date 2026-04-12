@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useTranslation }              from "@/lib/i18n";
-import { Badge }                       from "@/components/ui/Badge";
+import { SectionHeader }               from "@/components/ui/SectionHeader";
 
 // ── Step definitions ──────────────────────────────────────────────────────
 const STEPS = [
@@ -82,18 +82,13 @@ export function HowItWorks() {
       <div className="max-w-6xl mx-auto">
 
         {/* ── Header ── */}
-        <div className="text-center mb-16 space-y-4">
-          <Badge variant="primary">{t("how.label")}</Badge>
-          <h2
-            className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-on-surface"
-            style={{ hyphens: "auto" }}
-          >
-            {t("how.title")}
-          </h2>
-          <p className="text-on-surface-variant max-w-xl mx-auto" style={{ hyphens: "auto" }}>
-            {t("how.subtitle")}
-          </p>
-        </div>
+        <SectionHeader
+          icon="route"
+          label={t("how.label")}
+          title={t("how.title")}
+          subtitle={t("how.subtitle")}
+          className="mb-16"
+        />
 
         {/* ── Steps + connectors — desktop horizontal, mobile vertical ── */}
         <div className="flex flex-col md:flex-row items-stretch gap-0">

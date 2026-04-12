@@ -4,6 +4,7 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { useTranslation }     from "@/lib/i18n";
 import { USE_CASES }          from "@/lib/constants";
 import type { Translations }  from "@/lib/i18n";
+import { SectionHeader }      from "@/components/ui/SectionHeader";
 
 // ── One gradient theme per card (cycles over 6 cards × 2 rows) ───────────
 // bg = CSS gradient string for the card background
@@ -53,17 +54,12 @@ export function UseCasesCarousel() {
     <section id="use-cases" className="py-24 overflow-hidden">
       {/* ── Header ── */}
       <div ref={titleRef} className="max-w-7xl mx-auto px-6 md:px-8 mb-14">
-        <div className="reveal">
-          <span className="text-primary font-bold tracking-widest text-xs uppercase font-label mb-3 block">
-            Use Cases
-          </span>
-          <h2
-            className="text-4xl md:text-5xl font-extrabold font-headline text-on-surface"
-            style={{ hyphens: "auto" }}
-          >
-            {t("usecases.title")}
-          </h2>
-        </div>
+        <SectionHeader
+          icon="apps"
+          label="Use Cases"
+          title={t("usecases.title")}
+          align="left"
+        />
       </div>
 
       {/* ── Looping track ──────────────────────────────────────────────

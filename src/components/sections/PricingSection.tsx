@@ -5,6 +5,7 @@ import { useScrollAnimation }  from "@/hooks/useScrollAnimation";
 import { useTranslation }      from "@/lib/i18n";
 import { PRICING_PLANS }       from "@/lib/constants";
 import type { Translations }   from "@/lib/i18n";
+import { SectionHeader }       from "@/components/ui/SectionHeader";
 
 type Billing = "monthly" | "annual";
 
@@ -33,26 +34,13 @@ export function PricingSection() {
       <div className="max-w-6xl mx-auto">
 
         {/* ── Header ── */}
-        <div className="text-center mb-12 space-y-4 reveal">
-          <span className="inline-flex items-center gap-2 text-primary font-bold tracking-widest text-xs uppercase font-label">
-            <span
-              className="material-symbols-outlined text-[14px]"
-              style={{ fontVariationSettings: "'FILL' 1" }}
-            >
-              local_activity
-            </span>
-            {t("pricing.label")}
-          </span>
-          <h2
-            className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-on-surface"
-            style={{ hyphens: "auto" }}
-          >
-            {t("pricing.title")}
-          </h2>
-          <p className="text-on-surface-variant max-w-lg mx-auto" style={{ hyphens: "auto" }}>
-            {t("pricing.subtitle")}
-          </p>
-        </div>
+        <SectionHeader
+          icon="local_activity"
+          label={t("pricing.label")}
+          title={t("pricing.title")}
+          subtitle={t("pricing.subtitle")}
+          className="mb-12"
+        />
 
         {/* ── Billing toggle ── */}
         <div className="flex items-center justify-center gap-3 mb-14 reveal">
