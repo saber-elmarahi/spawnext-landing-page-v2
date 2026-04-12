@@ -53,37 +53,23 @@ export function WhySpowNext() {
       className="relative py-28 px-6 md:px-8 overflow-hidden"
       ref={ref}
     >
-      {/* Pixel art background image */}
+      {/* Section background — subtle radial glow */}
       <div
-        className="absolute inset-0 -z-20 pointer-events-none"
-        style={{
-          backgroundImage: "url('/assets/background-2.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          imageRendering: "pixelated",
-          opacity: 0.28,
-        }}
-        aria-hidden="true"
-      />
-
-      {/* Dark overlay — keeps section readable and on-brand */}
-      <div
-        className="absolute inset-0 -z-10 pointer-events-none"
+        className="absolute inset-0 -z-10"
         style={{
           background:
-            "linear-gradient(to bottom, var(--color-background) 0%, rgba(13,11,26,0.82) 30%, rgba(13,11,26,0.88) 70%, var(--color-background) 100%)",
+            "radial-gradient(ellipse 70% 50% at 50% 100%, rgba(88,67,209,0.08) 0%, transparent 70%), var(--color-background)",
         }}
-        aria-hidden="true"
       />
 
       {/* Decorative blurred blobs */}
       <div
-        className="absolute -left-32 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-25 pointer-events-none -z-10"
+        className="absolute -left-32 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl opacity-20 pointer-events-none -z-10"
         style={{ background: "radial-gradient(circle, #5843d1, transparent 70%)" }}
         aria-hidden="true"
       />
       <div
-        className="absolute -right-32 top-1/3 w-80 h-80 rounded-full blur-3xl opacity-20 pointer-events-none -z-10"
+        className="absolute -right-32 top-1/3 w-80 h-80 rounded-full blur-3xl opacity-15 pointer-events-none -z-10"
         style={{ background: "radial-gradient(circle, #06b6d4, transparent 70%)" }}
         aria-hidden="true"
       />
@@ -102,13 +88,13 @@ export function WhySpowNext() {
             {t("why.label")}
           </span>
           <h2
-            className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-white"
+            className="text-4xl md:text-5xl font-extrabold font-headline tracking-tight text-on-surface"
             style={{ hyphens: "auto" }}
           >
             {t("why.title")}
           </h2>
           <p
-            className="max-w-xl mx-auto text-lg leading-relaxed text-white/70"
+            className="text-on-surface-variant max-w-xl mx-auto text-lg leading-relaxed"
             style={{ hyphens: "auto" }}
           >
             {t("why.subtitle")}
