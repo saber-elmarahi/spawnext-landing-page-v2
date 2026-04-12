@@ -170,7 +170,7 @@ export function HeroSection() {
 
         {/* CTA buttons */}
         <div className="animate-fade-up delay-[600ms] flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button size="lg" icon="arrow_forward">
+          <Button size="lg" icon="auto_awesome">
             {t("hero.cta.primary")}
           </Button>
           <Button variant="secondary" size="lg" icon="play_circle" iconPosition="left">

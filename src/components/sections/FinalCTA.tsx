@@ -58,7 +58,7 @@ export function FinalCTA() {
           >
             {t("cta.button")}
             <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>
-              bolt
+              auto_awesome
             </span>
           </button>
         </div>
