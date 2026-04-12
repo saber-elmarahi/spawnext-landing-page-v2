@@ -26,6 +26,20 @@ export const translations = {
     "hero.cta.secondary":"View Demo",
     "hero.social":      "Trusted by 2,400+ creators and startups worldwide.",
 
+    // Why SpowNext
+    "why.label":    "Why SpowNext",
+    "why.title":    "Intelligence without complexity.",
+    "why.subtitle": "Three pillars that set SpowNext apart from everything else.",
+    "why.p1.tag":   "Smart Routing",
+    "why.p1.title": "The right model, always.",
+    "why.p1.desc":  "SpowNext automatically routes each task to the most capable AI model available. No prompt engineering, no model juggling — the best expert is deployed the moment you need it.",
+    "why.p2.tag":   "Zero Friction",
+    "why.p2.title": "Your team, zero skills required.",
+    "why.p2.desc":  "Compose powerful multi-agent workflows without writing a single line of code or mastering any automation tool. If you can describe your goal, SpowNext can build it.",
+    "why.p3.tag":   "Live Canvas",
+    "why.p3.title": "Watch your team work, in real time.",
+    "why.p3.desc":  "A live digital workspace where you can see your agents collaborate, track their progress, and experience the magic of autonomous teamwork unfolding right before you.",
+
     // Social Proof
     "social.label":     "Trusted by fast-growing teams",
 
@@ -149,6 +163,20 @@ export const translations = {
     "hero.cta.primary": "Assembler mon équipe",
     "hero.cta.secondary":"Voir la démo",
     "hero.social":      "Approuvé par plus de 2 400 créateurs et startups dans le monde.",
+
+    // Why SpowNext
+    "why.label":    "Pourquoi SpowNext",
+    "why.title":    "L'intelligence sans la complexité.",
+    "why.subtitle": "Trois piliers qui distinguent SpowNext de tout le reste.",
+    "why.p1.tag":   "Routage intelligent",
+    "why.p1.title": "Le bon modèle, toujours.",
+    "why.p1.desc":  "SpowNext sélectionne automatiquement le modèle IA le plus performant pour chaque tâche. Pas d'ingénierie de prompts, pas de jonglage — le meilleur expert est déployé au bon moment.",
+    "why.p2.tag":   "Zéro friction",
+    "why.p2.title": "Votre équipe, sans aucune compétence requise.",
+    "why.p2.desc":  "Composez des workflows multi-agents puissants sans écrire une seule ligne de code. Si vous pouvez décrire votre objectif, SpowNext peut le construire.",
+    "why.p3.tag":   "Espace digital",
+    "why.p3.title": "Voyez votre équipe travailler, en direct.",
+    "why.p3.desc":  "Un espace de travail digital vivant où vous observez vos agents collaborer, suivez leur progression et vivez l'expérience unique de l'autonomie en action.",
 
     // Social Proof
     "social.label":     "Adopté par des équipes en forte croissance",

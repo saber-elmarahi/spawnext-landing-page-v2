@@ -1,6 +1,7 @@
 import { Navbar }            from "@/components/layout/Navbar";
 import { Footer }            from "@/components/layout/Footer";
 import { HeroSection }       from "@/components/sections/HeroSection";
+import { WhySpowNext }       from "@/components/sections/WhySpowNext";
 import { SocialProofBar }    from "@/components/sections/SocialProofBar";
 import { HowItWorks }        from "@/components/sections/HowItWorks";
 import { FeaturesGrid }      from "@/components/sections/FeaturesGrid";
@@ -16,6 +17,7 @@ export default function HomePage() {
 
       <main>
         <HeroSection />
+        <WhySpowNext />
         <SocialProofBar />
         <HowItWorks />
         <FeaturesGrid />
