@@ -127,11 +127,11 @@ export const translations = {
     "founders.label":        "The Team",
     "founders.title":        "Built by builders, for builders.",
     "founders.subtitle":     "Three developers who got tired of stitching tools together — so they built the platform they always needed.",
-    "founders.julien.role":  "Co-Founder & CTO",
+    "founders.julien.role":  "CEO & CFO",
     "founders.julien.quote": "I wanted to build complex systems without the complexity. SpowNext is that dream made real.",
-    "founders.saber.role":   "Co-Founder & CEO",
+    "founders.saber.role":   "CEO & CPO",
     "founders.saber.quote":  "We didn't just build a product — we built the teammate every developer deserves.",
-    "founders.abdel.role":   "Co-Founder & CPO",
+    "founders.abdel.role":   "CEO & CTO",
     "founders.abdel.quote":  "The best products are invisible. SpowNext lets you focus on what matters, not the tooling.",
 
     // Final CTA
@@ -276,11 +276,11 @@ export const translations = {
     "founders.label":        "L'équipe",
     "founders.title":        "Créé par des builders, pour des builders.",
     "founders.subtitle":     "Trois développeurs qui en avaient assez d'assembler des outils — alors ils ont construit la plateforme dont ils avaient toujours besoin.",
-    "founders.julien.role":  "Co-fondateur & CTO",
+    "founders.julien.role":  "CEO & CFO",
     "founders.julien.quote": "Je voulais construire des systèmes complexes sans la complexité. SpowNext, c'est ce rêve rendu réel.",
-    "founders.saber.role":   "Co-fondateur & CEO",
+    "founders.saber.role":   "CEO & CPO",
     "founders.saber.quote":  "On n'a pas juste créé un produit — on a créé le coéquipier que chaque développeur mérite.",
-    "founders.abdel.role":   "Co-fondateur & CPO",
+    "founders.abdel.role":   "CEO & CTO",
     "founders.abdel.quote":  "Les meilleurs produits sont invisibles. SpowNext vous laisse vous concentrer sur ce qui compte.",
 
     // Final CTA
