@@ -16,29 +16,6 @@ export function FinalCTA() {
         ].join(" ")}
         style={{ background: "var(--gradient-primary)" }}
       >
-        {/* Pixel art background image */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            backgroundImage: "url('/assets/background-2.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center bottom",
-            opacity: 0.18,
-            imageRendering: "pixelated",
-          }}
-          aria-hidden="true"
-        />
-
-        {/* Gradient overlay to keep text readable */}
-        <div
-          className="absolute inset-0 pointer-events-none"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(88,67,209,0.55) 0%, rgba(88,67,209,0.30) 50%, rgba(10,8,30,0.70) 100%)",
-          }}
-          aria-hidden="true"
-        />
-
         {/* Floating decorative circles */}
         <div className="absolute -top-20 -left-20 w-64 h-64 rounded-full bg-white/5 pointer-events-none" aria-hidden="true" />
         <div className="absolute -bottom-16 -right-16 w-48 h-48 rounded-full bg-white/5 pointer-events-none" aria-hidden="true" />
