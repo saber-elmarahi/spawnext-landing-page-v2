@@ -123,6 +123,17 @@ export const translations = {
     "pricing.plan3.f4":    "SSO & Security",
     "pricing.plan3.cta":   "Contact Sales",
 
+    // Founders
+    "founders.label":        "The Team",
+    "founders.title":        "Built by builders, for builders.",
+    "founders.subtitle":     "Three developers who got tired of stitching tools together — so they built the platform they always needed.",
+    "founders.julien.role":  "Co-Founder & CTO",
+    "founders.julien.quote": "I wanted to build complex systems without the complexity. SpowNext is that dream made real.",
+    "founders.saber.role":   "Co-Founder & CEO",
+    "founders.saber.quote":  "We didn't just build a product — we built the teammate every developer deserves.",
+    "founders.abdel.role":   "Co-Founder & CPO",
+    "founders.abdel.quote":  "The best products are invisible. SpowNext lets you focus on what matters, not the tooling.",
+
     // Final CTA
     "cta.title":    "Your team is waiting.",
     "cta.subtitle": "Stop managing tools. Start managing talent. Deploy your autonomous workforce in just a few clicks.",
@@ -260,6 +271,17 @@ export const translations = {
     "pricing.plan3.f3":    "Accès par rôles",
     "pricing.plan3.f4":    "SSO & Sécurité",
     "pricing.plan3.cta":   "Contacter les ventes",
+
+    // Founders
+    "founders.label":        "L'équipe",
+    "founders.title":        "Créé par des builders, pour des builders.",
+    "founders.subtitle":     "Trois développeurs qui en avaient assez d'assembler des outils — alors ils ont construit la plateforme dont ils avaient toujours besoin.",
+    "founders.julien.role":  "Co-fondateur & CTO",
+    "founders.julien.quote": "Je voulais construire des systèmes complexes sans la complexité. SpowNext, c'est ce rêve rendu réel.",
+    "founders.saber.role":   "Co-fondateur & CEO",
+    "founders.saber.quote":  "On n'a pas juste créé un produit — on a créé le coéquipier que chaque développeur mérite.",
+    "founders.abdel.role":   "Co-fondateur & CPO",
+    "founders.abdel.quote":  "Les meilleurs produits sont invisibles. SpowNext vous laisse vous concentrer sur ce qui compte.",
 
     // Final CTA
     "cta.title":    "Votre équipe vous attend.",

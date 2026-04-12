@@ -8,6 +8,7 @@ import { FeaturesGrid }      from "@/components/sections/FeaturesGrid";
 import { UseCasesCarousel }  from "@/components/sections/UseCasesCarousel";
 import { AgentShowcase }     from "@/components/sections/AgentShowcase";
 import { PricingSection }    from "@/components/sections/PricingSection";
+import { FoundersSection }   from "@/components/sections/FoundersSection";
 import { FinalCTA }          from "@/components/sections/FinalCTA";
 
 export default function HomePage() {
@@ -24,6 +25,7 @@ export default function HomePage() {
         <UseCasesCarousel />
         <AgentShowcase />
         <PricingSection />
+        <FoundersSection />
         <FinalCTA />
       </main>
 
