@@ -14,13 +14,17 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const variantClasses: Record<Variant, string> = {
+  // Gradient fill — most important CTA
   primary:
-    "bg-primary text-on-primary font-bold shadow-[0_8px_32px_rgba(88,67,209,0.25)] " +
-    "hover:scale-[1.03] hover:-translate-y-0.5 hover:shadow-[0_12px_40px_rgba(88,67,209,0.35)] " +
+    "btn-primary-gradient text-white font-bold " +
+    "shadow-[0_8px_32px_rgba(88,67,209,0.30),0_2px_8px_rgba(0,0,0,0.12)] " +
+    "hover:scale-[1.04] hover:-translate-y-[3px] " +
+    "hover:shadow-[0_14px_44px_rgba(88,67,209,0.42),0_4px_12px_rgba(0,0,0,0.15)] " +
     "active:scale-[0.97] active:translate-y-0",
+  // Glass pill — secondary CTA
   secondary:
-    "bg-surface-container-lowest text-on-surface font-semibold border border-outline-variant/20 " +
-    "hover:bg-surface-container-low hover:border-primary/30 " +
+    "btn-secondary-glass font-semibold " +
+    "hover:scale-[1.03] hover:-translate-y-[2px] " +
     "active:scale-[0.97]",
   outline:
     "border border-primary text-primary font-bold bg-transparent " +

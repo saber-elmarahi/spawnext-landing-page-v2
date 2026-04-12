@@ -98,12 +98,121 @@ html.dark {
 }
 .animate-float { animation: float 6s ease-in-out infinite; }
 
-/* ── Marquee ── */
+/* ── Marquee (social proof bar) ── */
 @keyframes marquee {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 .animate-marquee { animation: marquee 30s linear infinite; }
+
+/* ── Use-cases carousel — two directions ── */
+@keyframes marquee-fwd {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+.animate-marquee-fwd     { animation: marquee-fwd     28s linear infinite; }
+.animate-marquee-reverse { animation: marquee-reverse 32s linear infinite; }
+
+/* ── Hero headline — letter-by-letter reveal ── */
+@keyframes letter-in {
+  0%   { opacity: 0; transform: translateY(18px) scale(0.92); }
+  60%  { opacity: 1; }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+.letter-animate {
+  opacity: 0;
+  animation: letter-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Hero gradient text (line 2) ──
+   background-clip:text on the parent,
+   inline-block children inherit transparent fill
+   ── */
+.gradient-text-hero {
+  background: linear-gradient(100deg, #5843d1 0%, #a855f7 40%, #06b6d4 80%, #22d3ee 100%);
+  background-size: 800px 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+/* each letter span must also be transparent so the parent gradient shows */
+.gradient-text-hero .letter-animate {
+  -webkit-text-fill-color: transparent;
+}
+
+/* ── Hero subtitle — word-by-word reveal ── */
+@keyframes word-in {
+  0%   { opacity: 0; transform: translateY(14px) scale(0.96); filter: blur(4px); }
+  60%  { opacity: 1; filter: blur(0); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+.word-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: word-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Hero subtitle — shimmer overlay (doesn't touch text color) ── */
+@keyframes subtitle-shimmer {
+  0%   { transform: translateX(-100%); opacity: 0; }
+  5%   { opacity: 1; }
+  95%  { opacity: 1; }
+  100% { transform: translateX(200%); opacity: 0; }
+}
+.subtitle-shimmer-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    105deg,
+    transparent            30%,
+    rgba(168, 85, 247, 0.18) 45%,
+    rgba(6,  182, 212, 0.22) 50%,
+    rgba(168, 85, 247, 0.18) 55%,
+    transparent            70%
+  );
+  opacity: 0;
+  animation: subtitle-shimmer 3.2s ease-in-out infinite;
+}
+
+/* ── Hero line 2 — full-block entrance ── */
+.line2-animate {
+  opacity: 0;
+  animation: letter-in 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ── Hero headline — line 1: gradient text stroke (SVG trick) ── */
+.headline-stroke-line1 {
+  -webkit-text-stroke: 2px transparent;
+  paint-order: stroke fill;
+  /* Layered text-shadow to simulate a gradient stroke around the letters */
+  text-shadow:
+    0 0 0 rgba(88,67,209,0),
+    1px  0   0 rgba(88,67,209,0.40),
+   -1px  0   0 rgba(88,67,209,0.40),
+    0    1px 0 rgba(168,85,247,0.40),
+    0   -1px 0 rgba(168,85,247,0.40),
+    1px  1px 0 rgba(113,94,235,0.35),
+   -1px -1px 0 rgba(113,94,235,0.35),
+    1px -1px 0 rgba(6,182,212,0.25),
+   -1px  1px 0 rgba(6,182,212,0.25);
+}
+
+/* ── Hero headline — line 2 text stroke ── */
+.headline-stroke {
+  -webkit-text-stroke: 1.5px rgba(168, 85, 247, 0.30);
+  paint-order: stroke fill;
+}
+
+/* ── Connector travelling dot (How It Works) ── */
+@keyframes connector-dot {
+  0%   { left: 0%; }
+  100% { left: calc(100% - 8px); }
+}
 
 /* ── Fade-up ── */
 @keyframes fade-up {
@@ -122,6 +231,91 @@ html.dark {
 .delay-300 { animation-delay: 0.3s; }
 .delay-400 { animation-delay: 0.4s; }
 .delay-500 { animation-delay: 0.5s; }
+
+/* ── Navbar bottom separator — gradient line ── */
+.nav-border-bottom {
+  border-bottom: 1px solid transparent;
+  /* The gradient line fades in from the edges, peaks at center */
+  -webkit-mask-image: none;
+  border-image: linear-gradient(
+    90deg,
+    transparent           0%,
+    rgba(88,67,209,0.45) 20%,
+    rgba(168,85,247,0.60) 50%,
+    rgba(88,67,209,0.45) 80%,
+    transparent          100%
+  ) 1;
+}
+
+/* ── Navbar pill — gradient border (padding-box / border-box trick) ── */
+/* Works with border-radius — no pseudo-element needed */
+.nav-pill-gradient {
+  border: 1px solid transparent;
+  background:
+    linear-gradient(var(--color-surface-container-lowest), var(--color-surface-container-lowest)) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(88,67,209,0.45)  0%,
+      rgba(168,85,247,0.50) 50%,
+      rgba(6,182,212,0.35)  100%
+    ) border-box;
+}
+
+/* ── Hero primary button — animated gradient fill ── */
+.btn-primary-gradient {
+  background: linear-gradient(135deg, #5843d1 0%, #a855f7 55%, #06b6d4 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  transition: background-position 0.5s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+.btn-primary-gradient:hover {
+  background-position: 100% 50%;
+}
+
+/* ── Hero secondary button — frosted glass with gradient border ── */
+.btn-secondary-glass {
+  color: var(--color-on-surface);
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--color-surface-container-lowest), var(--color-surface-container-lowest)) padding-box,
+    linear-gradient(135deg, rgba(88,67,209,0.50) 0%, rgba(168,85,247,0.55) 50%, rgba(6,182,212,0.40) 100%) border-box;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(88,67,209,0.12), inset 0 1px 0 rgba(255,255,255,0.12);
+  transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.3s ease;
+}
+.btn-secondary-glass:hover {
+  box-shadow: 0 8px 32px rgba(88,67,209,0.22), inset 0 1px 0 rgba(255,255,255,0.18);
+  background:
+    linear-gradient(var(--color-surface-container-low), var(--color-surface-container-low)) padding-box,
+    linear-gradient(135deg, rgba(88,67,209,0.65) 0%, rgba(168,85,247,0.70) 50%, rgba(6,182,212,0.55) 100%) border-box;
+}
+
+/* ── Navbar gradient CTA button ── */
+.nav-cta-gradient {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-family: var(--font-headline), sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+  background: linear-gradient(135deg, #5843d1 0%, #a855f7 55%, #06b6d4 100%);
+  background-size: 200% 200%;
+  background-position: 0% 50%;
+  box-shadow: 0 4px 18px rgba(88, 67, 209, 0.30), 0 1px 4px rgba(0,0,0,0.12);
+  transition: background-position 0.4s ease, box-shadow 0.25s ease, transform 0.2s ease;
+}
+.nav-cta-gradient:hover {
+  background-position: 100% 50%;
+  box-shadow: 0 8px 30px rgba(88, 67, 209, 0.42), 0 2px 8px rgba(0,0,0,0.16);
+  transform: translateY(-1px) scale(1.03);
+}
+.nav-cta-gradient:active {
+  transform: translateY(0) scale(0.99);
+}
 
 /* ── Ghost border (accessibility fallback, max 15% opacity) ── */
 .ghost-border {

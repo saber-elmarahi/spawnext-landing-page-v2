@@ -19,8 +19,8 @@ export const translations = {
 
     // Hero
     "hero.badge":       "Now in Public Beta",
-    "hero.h1.line1":    "Build your dream team.",
-    "hero.h1.line2":    "No code. No complexity.",
+    "hero.h1.line1":    "Spawn your agents team...",
+    "hero.h1.line2":    "Build What's Next !",
     "hero.subtitle":    "Empower your vision with autonomous AI agents that work together. Configure, deploy, and scale your virtual workforce in minutes.",
     "hero.cta.primary": "Assemble Your Team",
     "hero.cta.secondary":"View Demo",
@@ -31,7 +31,7 @@ export const translations = {
 
     // How It Works
     "how.label":        "The Process",
-    "how.title":        "Three steps to deployment.",
+    "how.title":        "Four steps to deployment.",
     "how.subtitle":     "Go from idea to a fully functioning autonomous team in minutes.",
     "how.step1.title":  "Describe your goal",
     "how.step1.desc":   "Simply tell SpowNext what you want to achieve. No coding required.",
@@ -39,6 +39,8 @@ export const translations = {
     "how.step2.desc":   "Our engine selects the best agents with specific roles for your task.",
     "how.step3.title":  "Work together",
     "how.step3.desc":   "Watch your autonomous agents collaborate and deliver results in real-time.",
+    "how.step4.title":  "Deploy & Preview",
+    "how.step4.desc":   "Export, publish, or preview your deliverables instantly — from reports to live apps.",
 
     // Features
     "features.label":   "The Toolbox",
@@ -141,8 +143,8 @@ export const translations = {
 
     // Hero
     "hero.badge":       "Maintenant en bêta publique",
-    "hero.h1.line1":    "Créez votre équipe idéale.",
-    "hero.h1.line2":    "Sans code. Sans complexité.",
+    "hero.h1.line1":    "Spawnez votre équipe d'agents...",
+    "hero.h1.line2":    "Construisez ce qui vient ensuite !",
     "hero.subtitle":    "Donnez vie à votre vision avec des agents IA autonomes qui collaborent. Configurez, déployez et faites évoluer votre équipe virtuelle en quelques minutes.",
     "hero.cta.primary": "Assembler mon équipe",
     "hero.cta.secondary":"Voir la démo",
@@ -153,7 +155,7 @@ export const translations = {
 
     // How It Works
     "how.label":        "Le processus",
-    "how.title":        "Trois étapes pour déployer.",
+    "how.title":        "Quatre étapes pour déployer.",
     "how.subtitle":     "De l'idée à une équipe autonome opérationnelle en quelques minutes.",
     "how.step1.title":  "Décrivez votre objectif",
     "how.step1.desc":   "Dites simplement à SpowNext ce que vous voulez accomplir. Aucun code requis.",
@@ -161,6 +163,8 @@ export const translations = {
     "how.step2.desc":   "Notre moteur sélectionne les meilleurs agents avec des rôles précis pour votre tâche.",
     "how.step3.title":  "Travaillez ensemble",
     "how.step3.desc":   "Regardez vos agents autonomes collaborer et livrer des résultats en temps réel.",
+    "how.step4.title":  "Déployez & Prévisualisez",
+    "how.step4.desc":   "Exportez, publiez ou prévisualisez vos livrables instantanément — rapports, apps ou contenus.",
 
     // Features
     "features.label":   "La boîte à outils",

@@ -61,10 +61,12 @@ const config: Config = {
         hover:    "var(--shadow-hover)",
       },
       animation: {
-        float:    "float 6s ease-in-out infinite",
-        marquee:  "marquee 30s linear infinite",
-        "fade-up":"fade-up 0.6s ease-out both",
-        pulse:    "pulse 2s cubic-bezier(0.4,0,0.6,1) infinite",
+        float:             "float 6s ease-in-out infinite",
+        marquee:           "marquee 30s linear infinite",
+        "marquee-fwd":     "marquee-fwd 28s linear infinite",
+        "marquee-reverse": "marquee-reverse 32s linear infinite",
+        "fade-up":         "fade-up 0.6s ease-out both",
+        pulse:             "pulse 2s cubic-bezier(0.4,0,0.6,1) infinite",
       },
       keyframes: {
         float: {
@@ -74,6 +76,14 @@ const config: Config = {
         marquee: {
           "0%":   { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-fwd": {
+          "0%":   { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "marquee-reverse": {
+          "0%":   { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0)" },
         },
         "fade-up": {
           "0%":   { opacity: "0", transform: "translateY(24px)" },

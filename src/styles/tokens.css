@@ -5,15 +5,15 @@
 
 :root {
   /* ── Surface / Background ── */
-  --color-background:                #f9f9f7;
-  --color-surface:                   #f9f9f7;
-  --color-surface-bright:            #f9f9f7;
-  --color-surface-dim:               #dadad8;
+  --color-background:                #f7f7f5;
+  --color-surface:                   #f7f7f5;
+  --color-surface-bright:            #ffffff;
+  --color-surface-dim:               #d8d8d6;
   --color-surface-container-lowest:  #ffffff;
-  --color-surface-container-low:     #f4f4f2;
-  --color-surface-container:         #eeeeec;
-  --color-surface-container-high:    #e8e8e6;
-  --color-surface-container-highest: #e2e3e1;
+  --color-surface-container-low:     #f2f2f0;
+  --color-surface-container:         #eaeae8;
+  --color-surface-container-high:    #e4e4e2;
+  --color-surface-container-highest: #dededc;
 
   /* ── Primary (violet-purple) ── */
   --color-primary:           #5843d1;
@@ -38,12 +38,12 @@
   --color-tertiary-fixed-dim:#c7c5d0;
 
   /* ── Text ── */
-  --color-on-surface:         #1a1c1b;
-  --color-on-surface-variant: #474554;
-  --color-on-background:      #1a1c1b;
-  --color-text-primary:       #1a1a2e;
-  --color-text-secondary:     #5e5e7a;
-  --color-text-muted:         #9999b3;
+  --color-on-surface:         #111118;
+  --color-on-surface-variant: #38364f;
+  --color-on-background:      #111118;
+  --color-text-primary:       #12101e;
+  --color-text-secondary:     #4a4868;
+  --color-text-muted:         #8080a0;
 
   /* ── Borders ── */
   --color-outline:         #787586;
@@ -94,15 +94,15 @@
    ============================================================ */
 .dark {
   /* ── Surface / Background ── */
-  --color-background:                #0d0b1a;
-  --color-surface:                   #0d0b1a;
-  --color-surface-bright:            #1a1730;
-  --color-surface-dim:               #080612;
-  --color-surface-container-lowest:  #13112a;
-  --color-surface-container-low:     #19163a;   /* section alt */
-  --color-surface-container:         #1f1c40;
-  --color-surface-container-high:    #252248;
-  --color-surface-container-highest: #2c2850;
+  --color-background:                #0e0c18;
+  --color-surface:                   #0e0c18;
+  --color-surface-bright:            #1c1a2e;
+  --color-surface-dim:               #08060e;
+  --color-surface-container-lowest:  #151325;
+  --color-surface-container-low:     #1b1930;   /* section alt */
+  --color-surface-container:         #211f3c;
+  --color-surface-container-high:    #272444;
+  --color-surface-container-highest: #2e2b4e;
 
   /* ── Primary — slightly brighter for dark bg legibility ── */
   --color-primary:           #8b7ff8;
@@ -127,12 +127,12 @@
   --color-tertiary-fixed-dim:#353358;
 
   /* ── Text ── */
-  --color-on-surface:         #e8e6f8;
-  --color-on-surface-variant: #a8a5c8;
-  --color-on-background:      #e8e6f8;
-  --color-text-primary:       #f0eeff;
-  --color-text-secondary:     #a0a0cc;
-  --color-text-muted:         #6060a0;
+  --color-on-surface:         #eeeaff;
+  --color-on-surface-variant: #c4c0e0;
+  --color-on-background:      #eeeaff;
+  --color-text-primary:       #f5f2ff;
+  --color-text-secondary:     #b8b5d8;
+  --color-text-muted:         #7070a8;
 
   /* ── Borders ── */
   --color-outline:         #5e5a80;
