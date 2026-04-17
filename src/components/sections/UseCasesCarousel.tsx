@@ -58,7 +58,6 @@ export function UseCasesCarousel() {
           icon="apps"
           label="Use Cases"
           title={t("usecases.title")}
-          align="left"
         />
       </div>
 
